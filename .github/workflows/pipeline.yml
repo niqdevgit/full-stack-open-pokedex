@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+    pull_request:
     if: ${{ github.event_name == 'push' }}
     branches: [main]
     types: [opened, synchronize]
